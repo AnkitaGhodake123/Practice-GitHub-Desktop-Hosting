@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Marquee Tag</title>
+</head>
+<body>
+	<marquee scrollamount="40" behavior="alternate" onmouseover="stp()" onmouseout="strt()" id="marq">Running</marquee>
+    <script type="text/javascript">
+    	let marq=document.getElementById('marq')
+    	function stp()
+    	{
+    		marq.stop()
+    		marq.innerHTML='Stopped'
+    		marq.style.color='red'
+    	}
+    	function strt()
+    	{
+    		marq.start()
+    		marq.innerHTML='Running'
+    		marq.style.color='black'
+    	}
+    </script>
+</body>
+</html>
